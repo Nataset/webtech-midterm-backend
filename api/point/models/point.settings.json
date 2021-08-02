@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "name": "Point",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "RECEIVE",
+        "SPEND"
+      ]
+    },
+    "Time": {
+      "type": "datetime"
+    },
+    "Amount": {
+      "type": "integer"
+    },
+    "Userdata": {
+      "via": "Points",
+      "model": "userdata"
+    }
+  }
+}

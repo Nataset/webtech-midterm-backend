@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rewards",
+  "info": {
+    "name": "Reward",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NameReward": {
+      "type": "string"
+    },
+    "Stock": {
+      "type": "integer"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE"
+      ]
+    },
+    "Point": {
+      "type": "integer"
+    }
+  }
+}

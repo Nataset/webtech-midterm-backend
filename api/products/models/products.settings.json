@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NameProduct": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "float"
+    },
+    "Stock": {
+      "type": "integer"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE"
+      ]
+    },
+    "Point": {
+      "type": "integer"
+    }
+  }
+}
