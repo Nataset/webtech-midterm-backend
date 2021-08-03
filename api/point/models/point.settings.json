@@ -28,6 +28,11 @@
     "Userdata": {
       "via": "Points",
       "model": "userdata"
+    },
+    "user": {
+      "via": "points",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
