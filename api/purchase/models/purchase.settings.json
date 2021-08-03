@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "purchases",
+  "info": {
+    "name": "Purchase",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "purchase"
+    },
+    "time": {
+      "type": "datetime"
+    },
+    "point_object": {
+      "via": "purchase",
+      "model": "point"
+    },
+    "product": {
+      "via": "purchases",
+      "model": "products"
+    }
+  }
+}

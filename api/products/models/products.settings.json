@@ -12,29 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "NameProduct": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "Price": {
+    "price": {
       "type": "float"
     },
-    "Stock": {
+    "stock": {
       "type": "integer"
     },
-    "Status": {
-      "type": "enumeration",
-      "enum": [
-        "AVAILABLE",
-        "UNAVAILABLE"
-      ]
-    },
-    "Point": {
+    "point": {
       "type": "integer"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Photo": {
+    "photo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -45,6 +40,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "purchases": {
+      "collection": "purchase",
+      "via": "product"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

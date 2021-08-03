@@ -71,9 +71,21 @@
     "allPoint": {
       "type": "integer"
     },
-    "points": {
-      "collection": "point",
-      "via": "user"
+    "address": {
+      "type": "text",
+      "default": "null"
+    },
+    "point": {
+      "via": "user",
+      "model": "point"
+    },
+    "purchase": {
+      "via": "user",
+      "model": "purchase"
+    },
+    "redeem": {
+      "via": "user",
+      "model": "redeem"
     }
   }
 }

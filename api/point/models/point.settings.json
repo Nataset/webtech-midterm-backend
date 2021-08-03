@@ -12,27 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Type": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "point"
+    },
+    "purchase": {
+      "model": "purchase",
+      "via": "point_object"
+    },
+    "redeem": {
+      "model": "redeem",
+      "via": "point_object"
+    },
+    "type": {
       "type": "enumeration",
       "enum": [
         "RECEIVE",
-        "SPEND"
-      ]
+        "REDEEM"
+      ],
+      "required": true
     },
-    "Time": {
-      "type": "datetime"
-    },
-    "Amount": {
+    "amount": {
       "type": "integer"
-    },
-    "Userdata": {
-      "via": "Points",
-      "model": "userdata"
-    },
-    "user": {
-      "via": "points",
-      "plugin": "users-permissions",
-      "model": "user"
     }
   }
 }

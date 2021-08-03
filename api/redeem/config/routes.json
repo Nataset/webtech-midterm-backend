@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/redeems",
+      "handler": "redeem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/redeems/count",
+      "handler": "redeem.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/redeems/:id",
+      "handler": "redeem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/redeems",
+      "handler": "redeem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/redeems/:id",
+      "handler": "redeem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/redeems/:id",
+      "handler": "redeem.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

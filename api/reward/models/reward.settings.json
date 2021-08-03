@@ -12,21 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "NameReward": {
-      "type": "string"
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
     },
-    "Stock": {
-      "type": "integer"
+    "stock": {
+      "type": "integer",
+      "required": true,
+      "default": 0
     },
-    "Status": {
-      "type": "enumeration",
-      "enum": [
-        "AVAILABLE",
-        "UNAVAILABLE"
-      ]
+    "point": {
+      "type": "integer",
+      "unique": false,
+      "required": true
     },
-    "Point": {
-      "type": "integer"
+    "redeems": {
+      "collection": "redeem",
+      "via": "reward"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
