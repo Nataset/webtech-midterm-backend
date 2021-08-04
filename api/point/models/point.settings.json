@@ -15,15 +15,15 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "point"
+      "via": "points"
     },
     "purchase": {
-      "model": "purchase",
-      "via": "point_object"
+      "via": "point_object",
+      "model": "purchase"
     },
     "redeem": {
-      "model": "redeem",
-      "via": "point_object"
+      "via": "point_object",
+      "model": "redeem"
     },
     "type": {
       "type": "enumeration",

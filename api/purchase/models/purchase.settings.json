@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
+      "via": "purchases",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "purchase"
+      "model": "user"
     },
     "time": {
       "type": "datetime"

@@ -66,26 +66,28 @@
       "type": "string"
     },
     "money": {
-      "type": "float"
+      "type": "float",
+      "default": 0
     },
     "allPoint": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "address": {
       "type": "text",
       "default": "null"
     },
-    "point": {
+    "points": {
       "via": "user",
-      "model": "point"
+      "collection": "point"
     },
-    "purchase": {
+    "purchases": {
       "via": "user",
-      "model": "purchase"
+      "collection": "purchase"
     },
-    "redeem": {
+    "redeems": {
       "via": "user",
-      "model": "redeem"
+      "collection": "redeem"
     }
   }
 }

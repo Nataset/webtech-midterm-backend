@@ -42,8 +42,8 @@
       "pluginOptions": {}
     },
     "purchases": {
-      "collection": "purchase",
-      "via": "product"
+      "via": "product",
+      "collection": "purchase"
     },
     "available": {
       "type": "boolean",

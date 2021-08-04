@@ -13,9 +13,9 @@
   "pluginOptions": {},
   "attributes": {
     "user": {
+      "via": "redeems",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "redeem"
+      "model": "user"
     },
     "time": {
       "type": "datetime"
