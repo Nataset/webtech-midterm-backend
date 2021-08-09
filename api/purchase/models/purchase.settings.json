@@ -27,6 +27,10 @@
     "product": {
       "via": "purchases",
       "model": "products"
+    },
+    "shipped": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

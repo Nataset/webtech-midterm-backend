@@ -27,6 +27,10 @@
     "reward": {
       "via": "redeems",
       "model": "reward"
+    },
+    "shipped": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
